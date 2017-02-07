@@ -25,7 +25,7 @@ syntax keyword NMODLFunction LOCAL GLOBAL
 syntax keyword NMODLFunction POINT_PROCESS  SUFFIX contained
 syntax keyword NMODLFunction USEION READ WRITE contained
 syntax keyword NMODLFunction RANGE NONSPECIFIC_CURRENT contained
-syntax keyword NMODLFunction POINTER contained 
+syntax keyword NMODLFunction POINTER BBCOREPOINTER contained
 syntax keyword NMODLFunction SOLVE METHOD contained 
 syntax keyword NMODLFunction CONSERVE contained 
 syntax keyword NMODLFunction THREADSAFE contained 
