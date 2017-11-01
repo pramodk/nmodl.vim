@@ -29,6 +29,7 @@ syntax keyword NMODLFunction POINTER contained
 syntax keyword NMODLFunction SOLVE METHOD contained 
 syntax keyword NMODLFunction CONSERVE contained 
 syntax keyword NMODLFunction THREADSAFE contained 
+syntax keyword NMODLFunction CONDUCTANCE contained 
 
 syntax keyword NMODLMath acos asin atan atan2 ceil cos cosh exp fabs floor fmod log log10 pow sin sinh sqrt tan tanh area ca cai cao celsius dt eca ek ena ica ik ina k ki ko na nai nao t v 
 
@@ -76,6 +77,7 @@ syntax match NMODLNumbers "\.\d\+\([edED][-+]\=\d\+\)\=[ij]\=\>"
 
 " Regions
 syntax region NMODLINFO start="COMMENT" end="ENDCOMMENT" fold contains=NMODLKeywords,NMODLFix
+syntax region NMODLVERBATIM start="VERBATIM" end="ENDVERBATIM" fold contains=@CPP
 
 " To fold blocks (use za)
 syntax region NMODLBLOCK start="{" end="}" fold contains=ALL
@@ -91,5 +93,6 @@ highlight link NMODLString      String
 highlight link NMODLOperator    Operator
 highlight link NMODLFix         Todo 
 highlight link NMODLINFO        Macro 
+highlight link NMODLVERBATIM    SpecialComment 
 highlight link NMODLNumbers     Number 
 highlight link NMODLNET_RECEIVE Function 
